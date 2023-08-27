@@ -49,9 +49,6 @@ This has special importance when we desire to identify an incident that consists
 ## Problem statement
 Real-time analysis of each camera has become an exhaustive task due to human limitations. The primary human limitation is the visual focus of attention. The human gaze can only concentrate on one specific point at once. Although there are large screens and high-resolution cameras, a person can only regard a small segment of the image at a time. Thieves are well aware that watching all the video footage is too demanding for "SMBs" such as retailers\ grocery\convenience stores, which makes the technology lose its role as a deterrent.
 
- - **Shoplifting is conservatively estimated to account for 30% – 40% of total retail shrink/losses.**
-   + **(Universities of Florida and Hayes International surveys)**
- - **The average shoplifting case value in 2021 was $310.11, reflecting an increase of 13.0% from 2020**
  
 ## Project goals:
 provides a comprehensive solution for monitoring and detecting unusual events in real-time without the need for human supervision, the system will alert on
@@ -90,15 +87,6 @@ Scenarios tested:
 - Inserting an item in a pocket / coat / bag
 
 
-All the cases of theft were examined in a variety of shooting angles, and by rotation of actors and clothing.
-
-we collect 4000 video clips after the filtering process.
-A link to the dataset sample is provided, for the entire Dataset
-
-send email to info@silentvision.org
-
-
-
 ## Model architecture
 ---
 ##### Network name: **Gate_Flow_SlowFast**
@@ -119,7 +107,7 @@ Receives as input - 64 Frames
 In the Fast-RGB channel, a Lateral connection used to connect properties to the Slow channel 
 ![Slow_fast](https://user-images.githubusercontent.com/34807427/172115316-cd57d6c7-4d2e-45a0-8f8e-a6373c6ddb31.png)
 
-For an in-depth understanding of the topic, I suggest reading the original paper  [SlowFast Networks for Video Recognition](https://scontent.ftlv7-1.fna.fbcdn.net/v/t39.8562-6/240838925_377595027406519_956785818926520821_n.pdf?_nc_cat=103&ccb=1-7&_nc_sid=ad8a9d&_nc_ohc=7as3khAgb1QAX9fsxcb&_nc_ht=scontent.ftlv7-1.fna&oh=00_AT9RK1GZmt8SrepxHyqL1c8iyQxtaNOW3GXccaw51aQyww&oe=62A0E274)
+For an in-depth understanding of the topic, this is the original paper  [SlowFast Networks for Video Recognition](https://scontent.ftlv7-1.fna.fbcdn.net/v/t39.8562-6/240838925_377595027406519_956785818926520821_n.pdf?_nc_cat=103&ccb=1-7&_nc_sid=ad8a9d&_nc_ohc=7as3khAgb1QAX9fsxcb&_nc_ht=scontent.ftlv7-1.fna&oh=00_AT9RK1GZmt8SrepxHyqL1c8iyQxtaNOW3GXccaw51aQyww&oe=62A0E274)
 
 
   **The model architecture is based on mobileNet SSD.
@@ -154,8 +142,7 @@ Common models in the field of HAR
 
 ## Model training && Evaluation
 
-The model was trained in the AWS-SageMaker  environment, on instance of ec2 p3.2xlarge 
-and for machine learning implementation TensorFlow ,Keras Python,OpenCV.
+The model was trained in the PyCharm environment and for machine learning implementation TensorFlow ,Keras Python,OpenCV.
 
 
 We try the Adam optimization algorithm with the common value for parameters beta 1 beta 2, epsilon as show in the table
